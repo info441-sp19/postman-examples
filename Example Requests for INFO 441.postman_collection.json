@@ -1,0 +1,269 @@
+{
+	"info": {
+		"_postman_id": "655a3346-074f-4678-984b-4478ab094af8",
+		"name": "Example Requests for INFO 441",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Dogdate",
+			"item": [
+				{
+					"name": "Get Dogdate Documentation page",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": ""
+						},
+						"description": "This is what your browser does to request HTML from an endpoint. Whenever you request something in the URL bar, you are making a GET request. The browser will add other headers on to your request, so this request is not exactly the same as what a browser will do, but produces the same result."
+					},
+					"response": []
+				},
+				{
+					"name": "Get Dogs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": ""
+						},
+						"description": "Makes a get request to https://dogdate-api.herokuapp.com/dogs to get a list of all of the dogs. It returns a JSON array."
+					},
+					"response": []
+				},
+				{
+					"name": "Get Shelters",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": ""
+						},
+						"description": "Makes a get request to https://dogdate-api.herokuapp.com/shelters to get a list of all of the shelters. It returns a JSON array."
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific Dog",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": ""
+						},
+						"description": "Gets the dog with the ID 1 by specifying the resource in the URL."
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific Shelter",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": ""
+						},
+						"description": "Gets the dog with the ID 3 by specifying the resource in the URL."
+					},
+					"response": []
+				},
+				{
+					"name": "Get Non-Existant Shelter",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://dogdate-api.herokuapp.com/shelters/4000000",
+							"protocol": "https",
+							"host": [
+								"dogdate-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"shelters",
+								"4000000"
+							]
+						},
+						"description": "Demonstrates an empty response in Postman when a resource that does not exist is requested."
+					},
+					"response": []
+				},
+				{
+					"name": "Post New Dog",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://dogdate-api.herokuapp.com/dogs",
+							"protocol": "https",
+							"host": [
+								"dogdate-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"dogs"
+							]
+						},
+						"description": "Adds a dog to the list of dogs on the server."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Dog with Specific ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": ""
+						},
+						"description": "Deletes a dog with the given ID from the server."
+					},
+					"response": []
+				},
+				{
+					"name": "OPTIONS request",
+					"request": {
+						"method": "OPTIONS",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://dogdate-api.herokuapp.com/dogs",
+							"protocol": "https",
+							"host": [
+								"dogdate-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"dogs"
+							]
+						},
+						"description": "OPTIONS requests respond with a header telling the user what methods are allowed or implemented on the server for the requested endpoint."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cube Rule (Won't work on your computer)",
+			"item": [
+				{
+					"name": "Register a User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": ""
+						},
+						"description": "Registers a user."
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": ""
+						},
+						"description": "Logs in as user. Look for the session token in the Authorization response header."
+					},
+					"response": []
+				},
+				{
+					"name": "Get private message threads",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:4090/v1/cube_message",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4090",
+							"path": [
+								"v1",
+								"cube_message"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "4ad2e208-8d71-4e9d-a44c-6f47372b58f2",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "72e2d601-cf46-4958-93c0-3b8d5bac3ea2",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
